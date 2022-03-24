@@ -27,4 +27,15 @@ public class Account extends BaseEntity{
 
     @OneToOne(mappedBy = "account")
     private User user;
+
+    public Account(String name, String address, String country, String state, String city, Integer aga, String postalCode, UserRole role) {
+        this.name = name;
+        this.address = address;
+        this.country = country;
+        this.state = state;
+        this.city = city;
+        this.aga = aga;
+        this.postalCode = postalCode;
+        this.role = role;
+    }
 }
